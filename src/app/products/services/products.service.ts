@@ -4,10 +4,15 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ProductsService {
-  name: string = 'ProductsService';
   constructor(private http: HttpClient) {}
 
   getAllProducts() {
     return this.http.get('https://fakestoreapi.com/products');
+  }
+  getCategories() {
+    return this.http.get('https://fakestoreapi.com/products/categories');
+  }
+  getProductByCategory(keyWard: string) {
+    return this.http.get('https://fakestoreapi.com/products/category/'+keyWard);
   }
 }
