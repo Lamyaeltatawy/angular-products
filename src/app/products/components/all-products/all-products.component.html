@@ -1,1 +1,47 @@
-<p>all-products works!</p>
+<div class="category">
+  <label for="categories">Categories</label>
+  <select name="categories" id="cars">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+</div>
+<div class="cards" >
+  <div class="card" *ngFor="let product of products">
+    <img src="{{ product.image }}" alt="card image" />
+    <h3>{{ product.title }}</h3>
+    <p>{{ product.description }}</p>
+    <div class="order-it">
+      <button>Add to Cart</button>
+      <h4>{{ product.price }}</h4>
+    </div>
+  </div>
+  <!-- <div class="card">
+        <img src="../../../../assets/front.jpg" alt="card image"/>
+        <h3>some title</h3>
+        <p>add description</p>
+        <div class="order-it">
+            <button>Add to Cart</button>
+            <h4>50 L.E</h4>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../../../../assets/front.jpg" alt="card image"/>
+        <h3>some title</h3>
+        <p>add description</p>
+        <div class="order-it">
+            <button>Add to Cart</button>
+            <h4>50 L.E</h4>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../../../../assets/front.jpg" alt="card image"/>
+        <h3>some title</h3>
+        <p>add description</p>
+        <div class="order-it">
+            <button>Add to Cart</button>
+            <h4>50 L.E</h4>
+        </div>
+    </div> -->
+</div>

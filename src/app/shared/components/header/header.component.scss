@@ -1,0 +1,34 @@
+/* :root{
+    --main-color:#7cb7bf;
+    --second-color:#b03737;
+} */
+header {
+    background-color:#56a9b4;
+    color: white;
+    padding: 20px 30px 20px 30px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container h3{
+   font-size: 30px;
+   cursor: pointer;
+   
+}
+
+header .container ul {
+    font-size: 18px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+header .container ul li {
+    margin-left: 80px;
+    cursor: pointer;
+}
