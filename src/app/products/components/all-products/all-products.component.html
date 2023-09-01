@@ -1,11 +1,7 @@
 <div class="category">
-  <label for="categories">Categories</label>
-  <select name="categories" id="categories" (change)="filterCategory($event)">
-    <option value="all" selected>all</option>
-    <option  *ngFor="let item of categories">{{ item }}</option>
-  </select>
+  <app-select [data]="categories" [title]="'Categories'" (selectedValue)="filterCategory($event)" ></app-select>
 </div>
-<div class="cards">
+<div class="cards" *ngIf="!isLoading">
   <div class="card" *ngFor="let product of products">
     <img src="{{ product.image }}" alt="card image" />
     <h3>{{ product.title }}</h3>
@@ -15,4 +11,7 @@
       <h4>{{ product.price }}</h4>
     </div>
   </div>
+</div>
+<div class="spinner"*ngIf="isLoading">
+  <app-spinner></app-spinner>
 </div>
