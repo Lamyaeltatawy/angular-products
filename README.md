@@ -42,6 +42,6 @@ To explore the project, follow these steps:
   <img src="./src/assets/all-products.jpg"/>
   <img src="./src/assets/all-2.jpg"/>
   <img src="./src/assets/category.jpg"/>
-  <img src="./src/assets/details-2.jpg"/>
+  <img src="./src/assets/details2.jpg"/>
   <img src="./src/assets/product-details.jpg"/>
 </div>
