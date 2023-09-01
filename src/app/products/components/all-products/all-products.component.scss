@@ -4,14 +4,15 @@
   gap: 20px;
 }
 .cards .card {
+  cursor: pointer;
   width: fit-content;
   height: auto;
   border-radius: 10px;
   padding-bottom: 20px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .cards .card:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
 }
 .cards .card img {
   width: 300px;
